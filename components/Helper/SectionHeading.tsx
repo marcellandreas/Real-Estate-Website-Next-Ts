@@ -4,7 +4,7 @@ type Props = {
   heading: string;
 };
 
-function SectionHeading({ heading }: Props) {
+const SectionHeading = ({ heading }: Props) => {
   return (
     <div>
       <h1 className=" text-2xl sm:text-3xl font-bold mb-2 text-gray-800">
@@ -13,6 +13,6 @@ function SectionHeading({ heading }: Props) {
       <p className=" text-sm text-gray-700">Lorem ipsum dolor sit amet.</p>
     </div>
   );
-}
+};
 
 export default SectionHeading;

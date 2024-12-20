@@ -10,7 +10,7 @@ type Props = {
   };
 };
 
-function AppartementTypeCard({ type }: Props) {
+const AppartementTypeCard = ({ type }: Props) => {
   return (
     <div className="rounded-lg shadow-lg p-6 hover:scale-110 transition-all duration-300">
       <Image src={type.icon} alt={type.type} width={50} height={50} />
@@ -20,6 +20,6 @@ function AppartementTypeCard({ type }: Props) {
       </div>
     </div>
   );
-}
+};
 
 export default AppartementTypeCard;

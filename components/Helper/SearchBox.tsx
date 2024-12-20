@@ -2,7 +2,7 @@ import React from "react";
 import { FaSearch } from "react-icons/fa";
 import { HiAdjustmentsHorizontal } from "react-icons/hi2";
 
-function SearchBox() {
+const SearchBox = () => {
   return (
     <div className="w-full md:w-[80%] mx-auto bg-white h-[4rem] sm:h-[5rem] flex px-4 sm:px-8 flex-col justify-center rounded-lg">
       <div className="flex items-center justify-between h-full">
@@ -23,6 +23,6 @@ function SearchBox() {
       </div>
     </div>
   );
-}
+};
 
 export default SearchBox;

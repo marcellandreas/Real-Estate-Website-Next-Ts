@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import MobileNavbar from "./MobileNavbar";
 
-function ResposiveNavbar() {
+const ResposiveNavbar = () => {
   const [showNav, setShowNav] = useState(false);
   const openNavHandler = () => setShowNav(true);
 
@@ -15,6 +15,6 @@ function ResposiveNavbar() {
       <MobileNavbar showNav={showNav} closeNav={closeNavHandler} />
     </div>
   );
-}
+};
 
 export default ResposiveNavbar;

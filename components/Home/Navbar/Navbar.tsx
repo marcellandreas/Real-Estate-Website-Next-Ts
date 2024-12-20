@@ -3,14 +3,14 @@ import { navLinks } from "@/constant/constant";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaUserCircle } from "react-icons/fa";
-import { FaHouse, FaUser } from "react-icons/fa6";
-import { HiBars3BottomLeft, HiBars3BottomRight } from "react-icons/hi2";
+import { FaHouse } from "react-icons/fa6";
+import { HiBars3BottomRight } from "react-icons/hi2";
 
 type Props = {
   openNav: () => void;
 };
 
-function Navbar({ openNav }: Props) {
+const Navbar = ({ openNav }: Props) => {
   const [navBg, setNavBg] = useState(false);
 
   useEffect(() => {
@@ -68,6 +68,6 @@ function Navbar({ openNav }: Props) {
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;

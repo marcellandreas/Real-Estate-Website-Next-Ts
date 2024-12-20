@@ -3,7 +3,7 @@ import { appartmentTypeData } from "@/data/data";
 import React from "react";
 import AppartementTypeCard from "./AppartementTypeCard";
 
-function AppartementType() {
+const AppartementType = () => {
   return (
     <div className="pt-16 pb-16 ">
       <div className="w-[80%] mx-auto">
@@ -20,6 +20,6 @@ function AppartementType() {
       </div>
     </div>
   );
-}
+};
 
 export default AppartementType;

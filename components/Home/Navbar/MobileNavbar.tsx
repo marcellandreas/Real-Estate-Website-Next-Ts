@@ -8,7 +8,7 @@ type Props = {
   closeNav: () => void;
 };
 
-function MobileNavbar({ closeNav, showNav }: Props) {
+const MobileNavbar = ({ closeNav, showNav }: Props) => {
   const navOpen = showNav ? "translate-x-0" : "translate-x-[-100%]";
   return (
     <div>
@@ -37,6 +37,6 @@ function MobileNavbar({ closeNav, showNav }: Props) {
       </div>
     </div>
   );
-}
+};
 
 export default MobileNavbar;
